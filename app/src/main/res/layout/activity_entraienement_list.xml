@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ListEntrainementActivity">
+
+    <Button
+        android:id="@+id/btnSeConnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:visibility="invisible"
+        android:layout_toStartOf="@id/LayoutTitre"
+        android:layout_marginRight="10dp"
+        android:onClick="seConnecter"
+        />
+
+    <LinearLayout
+        android:id="@+id/LayoutTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/txtPersonneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Bonjour"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Êtes vous prêt "/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAjouterEntrainement"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listEntrainement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/LayoutTitre"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

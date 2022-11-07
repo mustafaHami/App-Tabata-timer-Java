@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionUserActivity"
+    android:orientation="vertical"
+    android:background="@drawable/customborder2"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="10dp"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom :"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:id="@+id/editNomUser"
+            android:layout_width="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/customerborderinput"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            android:keyboardNavigationCluster="false"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom :"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:id="@+id/editPrenomUser"
+            android:layout_width="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/customerborderinput"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+   >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login :"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+
+
+        <EditText
+            android:id="@+id/editLoginUser"
+            android:layout_width="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/customerborderinput"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mail : "
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+
+
+        <EditText
+            android:id="@+id/editMailUser"
+            android:layout_width="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/customerborderinput"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe :"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+
+
+        <EditText
+            android:id="@+id/editMdpUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/customerborderinput"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="40dp">
+    <Button
+        android:id="@+id/btnAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Annuler"
+        android:layout_marginRight="20dp"
+        android:onClick="onAnnuler"/>
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider"
+        android:layout_marginLeft="20dp"
+
+        android:onClick="onInscription"/>
+</LinearLayout>
+
+
+</LinearLayout>
